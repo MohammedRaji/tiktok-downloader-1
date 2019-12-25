@@ -1,0 +1,21 @@
+{
+  "name": "tiktok-downloader-core",
+  "version": "0.1.0",
+  "description": "Core of the TikTok Video Downloader",
+  "scripts": {
+    "build": "tsc"
+  },
+  "main": "build/index.js",
+  "repository": "https://github.com/Pauloo27/tiktok-downloader",
+  "author": "Pauloo27",
+  "license": "GPL-3.0",
+  "private": true,
+  "dependencies": {
+    "@types/node": "^13.1.0",
+    "@types/node-fetch": "^2.5.4",
+    "@types/url-regex": "^5.0.0",
+    "node-fetch": "^2.6.0",
+    "typescript": "^3.7.4",
+    "url-regex": "^5.0.0"
+  }
+}
