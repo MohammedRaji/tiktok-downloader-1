@@ -1,0 +1,20 @@
+{
+  "name": "tiktok-downloader-cli",
+  "version": "0.1.0",
+  "description": "CLI implementation of the TikTok Video Downloader",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": "https://github.com/Pauloo27/tiktok-downloader",
+  "author": "Pauloo27",
+  "license": "GPL-3.0",
+  "private": true,
+  "dependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/node": "^13.1.0",
+    "commander": "^4.0.1",
+    "tiktok-downloader-core": "../core",
+    "typescript": "^3.7.4"
+  }
+}
