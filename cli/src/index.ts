@@ -11,7 +11,7 @@ cli
   .action(async (env, options) => {
     let url = options.parent.args[0] as string;
     if (url.endsWith("/")) url = url.substring(0, url.length - 1);
-    
+
     const urlParts = url.split("/");
     const id = urlParts[urlParts.length - 1];
 
@@ -34,11 +34,13 @@ cli
     console.log(await extract(options.parent.args[0]));
   });
 
-cli.on("--help", function() {
+cli.on("--help", () => {
+  const pathToIndex = process.argv[1].substring(process.cwd().length + 1);
+
   console.log("");
   console.log("Examples:");
-  console.log("  $ node build/index.js download https://vm.tiktok.com/Q3a2hQ/");
-  console.log("  $ node build/index.js extract https://vm.tiktok.com/Q3a2hQ/");
+  console.log(`  $ node ${pathToIndex} download https://vm.tiktok.com/Q3a2hQ/`);
+  console.log(`  $ node ${pathToIndex} extract https://vm.tiktok.com/Q3a2hQ/`);
 });
 
 cli.parse(process.argv);
