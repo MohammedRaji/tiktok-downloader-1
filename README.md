@@ -6,15 +6,20 @@ First, clone the repository:
 
 > git clone https://github.com/Pauloo27/tiktok-downloader.git
 
+Then build the core. In the `core` folder, run: 
+
+> yarn install && yarn build
+
+Then build the CLI tool. In the `cli` folder, run: 
+
+> yarn install && yarn build
+
 ## How to use
 
-In the repository folder, run the command:
+In the `cli` folder, run the command:
 
-> npm install
+> node build/index.js download \<url\> 
 
-This will download the dependencies. Now, you can download tiktok videos, run:
+To see the valid commands, run: 
 
-> node index.js \<url\> \[\<output-folder\>\] 
-
-Here the `<url>` is the video URL and `[<output-folder>]` the folder where the video should be saved, if the output folder is omitted, the current folder (`./`) will be used.
-
+> node build/index.js help
