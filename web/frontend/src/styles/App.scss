@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+
+$background: #232931;
+$primary: #1e90ff;
+$text: #bbe1fa;
+$download: #4ecca3;
+$secondBackground: #393e46;
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: $background;
+  color: $text;
+  text-align: center;
+}
+
+#logo {
+  margin: 20px;
+}
+
+#title {
+  font-family: "Pacifico", cursive;
+  font-size: 48px;
+  color: $primary;
+
+  #tik {
+    color: #1ff4ef;
+  }
+
+  #tok {
+    color: #fe2854;
+  }
+  transition: all 2s;
+}
+
+#title:hover {
+  text-shadow: 5px 5px RGBA(0, 0, 0, 0.8);
+}
+
+#url {
+  margin: 20px;
+  width: 50%;
+
+  background-color: $secondBackground;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: $text;
+  border: none;
+  transition: all 2s;
+}
+
+#url:focus {
+  box-shadow: 8px 8px RGBA(0, 0, 0, 0.6);
+}
+
+#submit {
+  .icon {
+    padding-right: 8px;
+  }
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  background: $background;
+  color: $download;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  width: 30%;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: $download;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+#submit:hover {
+  background-color: $secondBackground;
+}
+
+.box-shadow {
+  box-shadow: 5px 5px RGBA(0, 0, 0, 0.3);
+}
+
+.text-shadow {
+  text-shadow: 5px 5px RGBA(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+  #submit {
+    width: 75%;
+  }
+
+  #url {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-height: 100px) {
+  #title {
+    margin: 2px;
+  }
+}
