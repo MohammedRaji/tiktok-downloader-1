@@ -1,0 +1,21 @@
+{
+  "name": "tiktok-downloader-backend",
+  "version": "0.1.0",
+  "description": "Backend of the web implementation of the TikTok Video Downloader",
+  "main": "build/index.js",
+  "repository": "https://github.com/Pauloo27/tiktok-downloader",
+  "author": "Pauloo27",
+  "license": "GPL-3.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js"
+  },
+  "private": true,
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.1.6",
+    "express": "^4.17.1",
+    "tiktok-downloader-core": "../../core",
+    "typescript": "^3.7.4"
+  }
+}
