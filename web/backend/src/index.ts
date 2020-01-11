@@ -1,5 +1,4 @@
 import extract from "tiktok-downloader-core";
-
 import express from "express";
 
 const app = express();
@@ -30,4 +29,4 @@ app.get("/", async (req: express.Request, res: express.Response) => {
   res.redirect(videoURL);
 });
 
-const listener = app.listen(3000);
+app.listen(3000);
